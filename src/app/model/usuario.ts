@@ -35,7 +35,7 @@ export class Usuario {
     return '';
   }
 
-  validarcorreo(correo: string): string {
+  validarCorreo(correo: string): string {
     return this.validarCampoRequerido('correo', correo);
   }
 
@@ -61,7 +61,7 @@ export class Usuario {
 
   validarPropiedadesUsuario(correo: string, password: string, nombre: string, apellido: string
     , preguntaSecreta: string, respuestaSecreta: string): string {
-    return this.validarcorreo(correo) 
+    return this.validarCorreo(correo) 
       || this.validarPassword(password)
       || this.validarNombre(nombre)
       || this.validarApellido(apellido)
