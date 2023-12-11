@@ -1,0 +1,26 @@
+
+
+<ion-card *ngFor="let user of usuarios2">
+  <div *ngIf="user.nombre !=='admin' && user.apellido !=='admin' && user.email !=='admin@admin.cl'">
+    <ion-card-header>
+      <h4 style="color: rgb(1,44,86);">
+        Correo: {{user.email}}
+        <br>
+        <br>
+        Nombre: {{ user.nombre }} {{ user.apellido }}
+      </h4>
+      
+    </ion-card-header>
+
+    <div style="margin-left: 20px;">
+      <ion-button (click)="eliminarUsuario(user)">
+        Eliminar Usuario
+      </ion-button>
+    </div>
+  </div>
+
+  
+  <br>
+  <br>
+
+</ion-card>

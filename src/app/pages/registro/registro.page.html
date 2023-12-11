@@ -1,0 +1,58 @@
+<ion-content>
+  <div id="header">
+    <div id="app-bar">
+      <ion-icon name="arrow-back"></ion-icon>
+    <div id="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Logo_DuocUC.svg/2560px-Logo_DuocUC.svg.png">
+    </div>
+    <div></div>
+  </div>
+  <h1>Registro usuario</h1>
+    <h4>Complete el formulario para registrarse</h4>
+  </div>
+
+  <div class="wrapper" class="fondo" >
+    <ion-card class="form-wrapper">
+      <ion-card-content>
+      <div>
+        <ion-item>
+          <ion-input type="text" [(ngModel)]="usuario.correo" label="Correo" labelPlacement="floating"></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-input id="nombre" type="text" [(ngModel)]="usuario.nombre" label="Nombre" labelPlacement="floating"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type="text" [(ngModel)]="usuario.apellido" label="Apellidos" labelPlacement="floating"></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-input type="text" [(ngModel)]="usuario.preguntaSecreta" label="Pregunta secreta" labelPlacement="floating"></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-input type="text" [(ngModel)]="usuario.respuestaSecreta" label="Respuesta secreta" labelPlacement="floating"></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-input id="password-d" type="password" [(ngModel)]="usuario.password" label="Contraseña" labelPlacement="floating"></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-input id="password2-d" type="password" [(ngModel)]="repeticionPassword" label="Repetir contraseña" labelPlacement="floating"></ion-input>
+        </ion-item>
+        <div class="alinear-centro"></div>
+        <ion-button expands="block" (click)="nuevoUsuario()">
+          Registrar
+        </ion-button>
+        </div>
+      </ion-card-content>
+      </ion-card>
+      
+      <br>
+      <ion-button (click)="volverLogin()">
+        Volver
+      </ion-button>
+    </div>
+</ion-content>
+

@@ -1,0 +1,27 @@
+ion-header {
+  --ion-background-color: rgb(109, 158, 207);
+}
+.logo{
+  
+    height: 57px;
+    width: 150px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    align-self: center;
+  
+}
+
+.correcto{
+  background-image: url("https://extensionduoc.s3.us-west-2.amazonaws.com/wp-content/uploads/2022/05/25131807/formatos-web-patrimonio_Mesa-de-trabajo-1-copia-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+ion-title{
+  color: white;
+}

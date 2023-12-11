@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-grid>
+      <ion-row>
+        <ion-col col-3 col-md-6>
+          <img height="100%" class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Logo_DuocUC.svg/2560px-Logo_DuocUC.svg.png">
+        </ion-col>
+        <ion-col col-9 col-md-6>
+            <div>
+              <h1 style="color: orange;">Correcto</h1>
+            </div>
+          
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-text-center">
+
+  <div class="correcto">
+    <ion-toolbar>
+
+     
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdhjQCm1IZfUWZLUPbnOHdINdky09Fg5TvX4WQ7TVwVbh1vNWt-gZiRKv4F8R4o5OGbYA&usqp=CAU" />
+      
+
+      <ion-label>
+        <h1>Correcto</h1>
+      </ion-label>
+      <ion-label>
+        <h2>Tu contraseña es: {{password}}</h2>
+      </ion-label>
+      <br>
+      <br>
+      <ion-button expands="block" (click)="volverInicio()">
+        Volver al Ingreso
+        </ion-button>
+    </ion-toolbar>
+  </div>
+    
+</ion-content>

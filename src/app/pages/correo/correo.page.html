@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar color="primary" style="height: 100%;">
+    <ion-grid>
+      <ion-row>
+        <ion-col col-3 col-md-6>
+          <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Logo_DuocUC.svg/2560px-Logo_DuocUC.svg.png">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-text-center">
+    <div class="mi-contenido">
+    <ion-card style="padding-top:10px;">
+      <ion-card-title>Paso 1: Ingresa tu correo</ion-card-title>
+      <ion-input style="margin-bottom: 10px;" type="text" [(ngModel)]="correo" placeholder="Ingresa tu correo"></ion-input>
+
+      <ion-button (click)="ingresarPaginaValidarRespuestaSecreta()"  shape="block" style="min-width: 20%; max-width: 25%; position: relative; left: 38%;" >
+        Siguente
+      </ion-button>
+    </ion-card>
+    <br>
+    <br>
+    <ion-button expands="block" (click)="volverInicio()">
+      Volver
+      </ion-button>
+    </div>
+</ion-content>

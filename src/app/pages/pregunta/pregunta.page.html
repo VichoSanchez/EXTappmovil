@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar color="primary" style="height: 100%;">
+    <ion-grid>
+      <ion-row>
+        <ion-col col-3 col-md-6>
+          <img height="100%" class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Logo_DuocUC.svg/2560px-Logo_DuocUC.svg.png">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+  <ion-content class="ion-text-center">
+
+    <div class="pregunta">
+      <ion-card>
+        <ion-card-title>Paso 2: Responde tu pregunta Secreta</ion-card-title>
+        <ion-text >
+          <p>{{preguntaSecreta}}</p>
+        </ion-text>
+        <ion-input style="margin-bottom: 10px;" type="text" [(ngModel)]="respuesta" placeholder="Respuesta"></ion-input>
+        <ion-button (click)="validarRespuestaSecreta()"  shape="block" style="min-width: 20%; max-width: 25%; position: relative; left: 38%;" >
+          Siguente
+        </ion-button>
+      </ion-card>
+  
+      <ion-button expands="block" (click)="volverInicio()">
+        Volver
+        </ion-button>
+    </div>
+    
+  </ion-content>
+
+  

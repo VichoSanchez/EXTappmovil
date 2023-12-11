@@ -1,0 +1,8 @@
+{
+  "name": "registroapp",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular-standalone"
+}

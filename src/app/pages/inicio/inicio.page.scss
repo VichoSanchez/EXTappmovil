@@ -1,0 +1,45 @@
+.logo{
+  height: 57px;
+  width: 150px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  align-self: center;
+}
+
+.bp{
+text-align: center;
+}
+
+.columna_titulos{
+width: 180;
+}
+
+.subt{
+text-align: center;
+}
+
+.TitDat{
+text-align: center;
+}
+
+.infDat *{
+justify-content: center;
+text-align: start;
+}
+
+
+
+.mi-contenido{
+margin: 0;
+background-image: url("https://static.eldinamo.cl/media/2020/01/Fachada-Palacio-I%CC%81n%CC%83iguez-e1578666996857.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+width: 100%;
+height: 100%;
+}
+.footer{
+background-color: rgb(255, 255, 255);
+}
